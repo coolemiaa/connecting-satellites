@@ -42,10 +42,10 @@ def on_mouse_down(pos):
     if next < numberofsatellite:
         if satellites[next].collidepoint(pos):
             if next:
-                lines.append((satellites[next-1].pos, satellites[next.pos]))
+                lines.append((satellites[next-1].pos, satellites[next].pos))
             next=next + 1
         else:
-            lines+[]
+            lines=[]
             next=0
 createsatellite()
 
